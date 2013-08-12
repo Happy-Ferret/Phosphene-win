@@ -1,4 +1,4 @@
-Phosphene-win
+Phosphene_win
 =============
 
 A windows port of hdni's amazing Gnome theme: https://github.com/hdni/Phosphene
