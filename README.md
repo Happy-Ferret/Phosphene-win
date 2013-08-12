@@ -19,3 +19,9 @@ WINDOWS 7: Download http://www.angusj.com/resourcehacker/ and open `C:\Windows\R
 
 WINDOWS 8: Use http://winaero.com/comment.php?comment.news.20 to disable ribbon. You can also disable the organize bar
 by following the previous Wndows 7 step.
+
+Foobar2000
+----------------
+![screenshot](http://a.pomf.se/7Bl2.png)
+
+Install the requered components and load the theme with columns UI.
