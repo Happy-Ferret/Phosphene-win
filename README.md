@@ -10,9 +10,9 @@ Still WIP, at the moment I there is not much besides a TrueTransparency theme an
 
 
 TrueTransparency
-================
+----------------
 
-* Download and install TT here: http://dl.dropbox.com/u/7100381/TrueTransparency.zip, drag and drop the "truetransparency"
+* Download and install TT from here: http://dl.dropbox.com/u/7100381/TrueTransparency.zip, drag and drop the "truetransparency"
 folder into `C:\Program Files\`.
 
 * Copy all the files from `Kamiru-/Phosphene/TrueTransparency/` to `C:\Program Files\TrueTransparency\TrueTransparency x86` AND `C:\Program Files\TrueTransparency\TrueTransparency x64`.
