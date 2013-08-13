@@ -1,5 +1,7 @@
 Phosphene_win
 =============
+I'm on vacation for 2 weeks, so there won't be any updates... I'm not abandoning this project though!
+
 A windows port of hdni's amazing Gnome theme: https://github.com/hdni/Phosphene
 
 Still WIP, at the moment I there is not much besides a TrueTransparency theme and an almost finished foobar theme.
