@@ -1,0 +1,1591 @@
+@-moz-document domain(boards.4chan.org) {
+
+  
+                                               
+       ) )                                   
+            __      ___       __       __    
+    ____    ) )    ) )    ) )    ) ) 
+                             
+((____        ((___( (             
+ 
+            Created by Myson
+            Modded by Kamiru
+            Thanks to RiDeag
+
+Hide things
+#qr .close,
+#qr #autohide,
+.boardBanner  img,
+.boardSubtitle,
+#copyright,
+.deleteform,
+.postingMode,
+.stylechanger,
+.postForm,
+.extButton,
+h1,
+hr,
+div.pages,
+.pagelist,
+div.center,
+#hideBtn,
+#absbot,
+.ad-plea,
+#unread-line,
+.hide-reply-button.stub abefore{
+    display none !important;
+}
+
+html {
+    background-color #fff !important;
+}
+
+body {
+    transition all 0.35s linear !important;
+    background-color #fff !important;
+    font-size 13px !important;
+    font-family 'Univers LT Std 55' !important;
+}
+
+active, focus {
+  outline none !important;
+}
+
+.board {
+    transition all 0.35s linear !important;
+    background-color #fff !important;
+    overflow hidden !important;
+    margin-right -5px !important;
+    margin-left 156px !important;
+    margin-bottom -8px !important;
+    margin-top -30px !important;
+
+}
+
+
+    Top and side bar
+
+
+#board-listbefore {
+    transition all 0.35s linear !important;
+    margin-right 0 !important;
+    margin-left 0 !important;
+    display inline !important;
+    content  !important;
+    background rgba(120,154,194,1) !important;
+    position fixed !important;
+    top 0px !important;
+    right 0px !important;
+    width 100% !important;
+    height 7px !important;
+    display none !important;
+}
+
+#shortcutsafter {
+    transition all 0.35s linear !important;
+    margin-right 0 !important;
+    margin-left  0!important;
+    content  !important;
+    position fixed !important;
+    height 100% !important;
+    width 160px !important;
+    border-right 1px solid #f5f5f5 !important;
+    top 0px !important;
+    left 0px !important;
+    right auto !important;
+    bottom auto !important;
+    background #fcfcfc !important;
+    z-index -500 !important;  
+}
+
+#board-listafter {
+    transition all 0.35s linear !important;
+    margin-top -282px;
+    content Favorites;
+    width 128px;
+    border-top 1px solid rgba(39,51,63,1) !important;
+    padding 14px 0 3px 24px;
+    font-weight 600 !important;
+    font-size 10pt ;
+    left -4px !important;
+    position Fixed;
+    line-height 17px;
+    height 22px;
+}
+
+#header-bar {
+    transition all 0.35s linear !important;
+    top 0px !important;
+    height 0px !important;
+    width 22px !important;
+    min-width 22px !important;
+    max-width 22px !important;
+    font-weight 500 !important;
+
+}
+
+#notifications {
+    position fixed !important;
+    top 3px !important;
+    left 50px !important;
+    height auto !important;
+    width auto !important;
+    display none !important;
+}
+
+#shortcuts {
+    position fixed !important;
+    top 5000px !important;
+}
+
+#board-list a {
+    transition all 0.35s linear !important;
+    padding-right 50px !important;
+    white-space pre;
+}
+
+#header-bar.autohide #board-listbefore,
+#header-bar.autohide {
+    transition all 0.35s linear !important;
+    transform none !important;
+    transition none !important;
+}
+
+#header-bar.autohide #board-listafter,
+#header-bar.autohide #board-list,
+#header-bar.autohide #shortcutsafter,
+.autohide #watcher.dialog,
+.autohide #thread-stats,
+.autohide #update-timer,
+.autohide #update-status.new  {
+    transition all 0.35s linear !important;
+    left -500px !important;
+}
+
+.autohide body {
+    transition all 0.35s linear !important;
+    margin-left -160px !important;
+}
+
+#board-list {
+    transition all 0.35s linear !important;
+    position fixed !important;
+    top 52px !important;
+    height 100% !important;
+    width 160px !important;
+    text-align left !important;
+    left 12px !important;
+}
+
+#custom-board-list {
+    transition all 0.35s linear !important;
+    line-height20px !important;
+    display inline !important;
+}
+
+#full-board-list a {
+    transition all 0.35s linear !important;
+    white-spacenormal!important;
+    margin-right-50px!important;
+}
+
+#full-board-list {
+    transition all 0.35s linear !important;
+    displayinline !important;
+    visibility hidden !important;
+    padding5px 0 !important;
+    positionfixed!important;
+    top-50px!important;
+    left180px!important;
+    width 500px !important;
+    text-align center !important;
+    background-color#fff!important;
+    bordersolid 5px #3d444e!important;
+    border-radius 0 0 5px 5px!important;
+    z-index -10 !important;
+}
+
+#full-board-listnot([Hidden]) {
+    transition all 0.35s linear !important;
+    visibility visible !important;
+    top 35px !important;
+    bottom auto !important;
+}
+
+#custom-board-list a[href=javascript;],
+#full-board-list a[href=javascript;] {
+  padding0!important;
+  padding-right5px!important;
+  padding-left5px!important;
+}
+
+.hide-board-list-button {
+  displayinherit!important;
+  font-size9pt!important;
+  positionfixed!important;
+  top 43px !important;
+  left110px!important;
+  z-index500!important;
+  background#f4f5f5!important;
+  width10px!important;
+  padding0!important;
+}
+
+.show-board-list-button {
+  displayinherit!important;
+  positionfixed!important;
+  top 43px !important;
+  left112px!important;
+  z-index499!important;
+}
+
+#full-board-list {
+  colortransparent!important;
+}
+
+#boardNavDesktopFoot,
+#boardNavDesktopFoota.current {
+  displayinline!important;
+  positionfixed!important;
+  font-size 0 !important;
+  top5000px!important;
+}
+
+#boardNavDesktopFoot  a.currentafter,
+.boardTitle {
+  position fixed !important;
+  top 4px !important;
+  left 10px !important;
+  font-size 0pt !important;
+  content attr(title) !important;
+  color rgb(200,200,200) !important;
+  font-weight 100 !important;
+  z-index 999 !important;
+}
+
+.yotsuba-broot #header-bar a, .yotsuba-broot #notifications a {
+    color #000 !important;
+}
+
+#delform {
+  border none !important;
+  background none !important;
+}
+
+.post {
+margin0!important;
+border-radius 0px !important;
+}
+.postContainerlast-child {
+border-bottomsolid 4px rgba(233,236,240,1) !important;
+}
+.postContainer {
+border-bottom solid 4px rgba(233,236,240,1) !important;
+  position relative !important;
+  padding 2px 0 3px 10px !important;
+  background-color #fff !important;
+  margin-bottom -3px !important;
+  padding-left 10px !important;
+  padding-right 10px !important;
+  max-width 1000px !important;
+  margin-left auto !important;
+  margin-right auto !important;
+  z-index 0 !important;
+}
+
+.opContainer, .op {
+}
+.post.op {
+
+margin-right -0px !important;
+}
+
+.expanded-image,
+.threadOP {
+  clear none !important;
+}
+
+.threadContainer {
+margin-right-3px!important;
+  padding-left20px!important;
+  margin-left0px!important;
+}
+
+.replylink {
+  margin-left 5px !important;
+  margin-right 5px !important;
+  margin-top 1px !important;
+  color #069 !important;
+  text-decoration none !important;
+  font-size 9pt !important;
+}
+.summary {
+color rgb(220,220,228) !important;
+  positionabsolute!important;
+  right8px!important;
+  margin-top-14px!important;
+  z-index1!important;
+  font-size9pt!important;
+  display none !important;
+}
+
+.postNum span {
+  font-size 0 !important;
+}
+
+.post.reply {
+  margin6px 0 0 0!important;
+  background #FFF !important;
+  border-right none !important;
+  border-bottom none !important;
+  width 100% !important;
+}
+
+#qp {
+  box-shadow none !important;
+  border none !important;
+}
+
+#qp .postContainer {
+  border 1px solid rgba(0,0,0,.1) !important;
+}
+
+#qp .menu-button {
+  display none !important;
+}
+
+#qp .post.op{
+  margin 0 !important;
+}
+
+#qp .yourPost .post.reply {
+  border-leftnone!important;
+}
+
+.inline.crosspost .postContainer.replyContainer{
+  border 1px solid #ccc !important;
+}
+
+.inline {
+  box-shadow none !important;
+  border none !important;
+  margin 0px !important;
+  margin-left 10px !important;
+  max-width 80% !important;
+  background transparent !important;
+}
+
+.inline .opContainer,
+.inline .postContainer{
+  background #ffffff !important;
+  border 1px solid rgba(0,0,0,.1) !important;
+  box-shadow none !important;
+}
+
+.inline .menu-button {
+  display none !important;
+}
+
+.backlink,
+.inline .backlink,
+.postMessage a,
+#credits a {
+  text-decoration none !important;
+}
+
+.opContainer.qphl {
+  box-shadow none !important;
+}
+
+.opContainer {
+  height 100% !important;
+  width 100% !important;
+}
+
+.op {
+  display table !important;
+  height 100% !important;
+  width 100% !important;
+  padding-bottom3px!important;
+}
+
+.watch-thread-link {
+background-image url('')!important;
+padding0 !important;
+  position relative !important;
+  top 1px !important;
+  left -2px !important;
+  width 13px !important;
+}
+
+.watch-thread-linkafter {
+color rgb(165,165,165) !important;
+    font-family FontAwesome, sans-serif !important;
+  content  !important;
+  font-size 11pt !important;
+}
+
+.watch-thread-link.watchedafter {
+color rgb(205,205,205) !important;
+  font-family FontAwesome, sans-serif !important;
+  content  !important;
+  font-size 11pt !important;
+}
+
+.postInfo {
+  margin-left 8px !important;
+  margin-top 2px !important;
+  padding-bottom2px!important;
+  width auto !important;
+  display block !important;
+}
+
+.postInfo input[type=checkbox] {
+  display none !important;
+}
+
+.fileInfo {
+  margin-left 8px !important;
+  
+}
+
+.op .fileInfo {
+  padding-top 5px !important;
+  margin-left 10px !important;
+}
+
+.op .file {
+  padding-bottom 2px !important;
+  margin 0px -6px 2px -2px !important;
+}
+
+.postMessage {
+  margin-left 10px !important;
+  margin-top 7px !important;
+}
+
+.fileThumb  imgfirst-child {
+  border-top-left-radius1px!important;
+  border-top-right-radius1px!important;
+  border-bottom-left-radius1px!important;
+  border-bottom-right-radius1px!important;
+  padding-bottom8px!important;
+  margin-left -9px !important;
+}
+
+.fileDeleted {
+  padding-left17px!important;
+}
+
+.navLinks,
+.cataloglink {
+  font-size 0 !important;
+}
+
+.cataloglink aafter,
+.navLinks.navLinksBot a[href=catalog]before {
+margin0 !important;
+  content ?;
+  position fixed !important;
+  right 46px !important;
+  top 10px !important;
+  z-index 36 !important;
+  font-size 11pt !important;
+  font-family FontAwesome, sans-serif !important;
+}
+
+.cataloglink abefore,
+.navLinks.navLinksBot a[href=catalog]after {
+  content ;
+  position fixed !important;
+  right 87px !important;
+  top 8px !important;
+  z-index 36 !important;
+  font-size 10pt !important;
+  font-family LucidaGrande, sans-serif !important;
+  pointer-events none!important;
+}
+
+.settings-link {
+  font-size 20pt !important;
+}
+
+.settings-linkafter {
+  font-family FontAwesome, sans-serif !important;
+  content ? !important;
+  font-size 11pt !important;
+  font-weight normal !important;
+  position fixed !important;
+  right 28px !important;
+  top 10px !important;
+}
+
+#menu.dialognot(.left) {
+  position fixed !important;
+  right 0px !important;
+  top 34px !important;
+  left auto !important;
+  bottom auto !important;
+  transition 0.35s color linear;
+  width 162px !important;
+  height auto !important;
+  z-index 100 !important;
+border-top-left-radius 4px!important;
+border-bottom-left-radius 4px!important;
+border4px solid rgba(120,154,194,0.95)!important;
+border-right0!important;
+
+}
+
+#menu.dialognot(.left) .submenu {
+border-bottom-left-radius 4px!important;
+width162px!important;
+top98px!important;
+right0px!important;
+z-index10 !important;
+position fixed !important;
+border-left4px solid rgba(100,134,174,0.95)!important;
+border-bottom4px solid rgba(100,134,174,0.95)!important;
+
+}
+
+#header-bar .menu-buttonafter {
+  content none !important;
+}
+
+#header-bar .menu-button i {
+  font-size 0pt !important;
+  color transparent !important;
+  position fixed !important;
+  right 4px !important;
+  top 2px !important;
+  z-index 10 !important;
+  transition 0.35s color linear;
+}
+
+#header-bar .menu-button ibefore {
+font-style normal !important;
+font-family FontAwesome !important;
+  content ? !important;
+  font-size 11pt !important;
+}
+
+#watcherbefore {
+transition all 0.35s linear !important;
+  margin-top -42px;
+  content Pinned;
+  width 128px;
+  border-top1px solid rgba(39,51,63,1)!important;
+  padding 14px 0 3px 24px;
+  font-weight600!important;
+  font-size 10pt ;
+  left-4px!important;
+  position absolute;
+  line-height17px;
+  height22px;
+}
+
+#watcher {
+transition all 0.35s linear !important;
+color rgba(255,255,255,0.1) !important;
+  position fixed !important;
+  display inline !important;
+  line-height13pt!important;
+  padding-top 42px !important;
+  left 4px !important;
+  min-width 162px !important;
+  max-width 162px!important;
+  box-shadow none !important;
+  white-spacepre!important;
+}
+
+#watcher div {
+  margin-top4px!important;
+  padding-right15px!important;
+}
+
+#watcher a {
+  margin-left4px!important;
+}
+
+#watcher  .move {
+  margin-top -30px !important;
+  height 15px !important;
+  position absolute !important;
+  z-index 800 !important;
+  color transparent !important;
+  width 165px !important;
+  padding 4px 0 6px 0 !important;
+}
+
+#watcher div  a[href=javascript;],
+#watcher .close {
+  positionrelative!important;
+  floatright!important;
+  left5px!important;
+  top-1px!important;
+}
+
+#watcher div  a[href=javascript;],
+#watcher .close {
+  visibilitycollapse!important;
+}
+
+#watcherhover div  a[href=javascript;],
+#watcherhover .close {
+  visibilityvisible!important;
+  z-index9001!important;
+}
+
+.closed {
+  padding-top20px!important;
+  padding-bottom20px!important;
+}
+
+
+    Global Message
+
+
+.hide-announcement {
+  width 100% !important;
+  z-index 10 !important;
+  text-decoration none !important;
+  cursor pointer !important;
+  font-size 0 !important;
+}
+
+.hide-announcementafter {
+  text-align center !important;
+  left 99% !important;
+  margin-top 10px !important;
+  position absolute !important;
+  float none !important;
+  color rgb(235,235,235) !important;
+   font-family FontAwesome, sans-serif !important;
+  content ;
+  font-size8pt !important;
+}
+.hide-announcementhoverafter {
+color rgb(230,230,230) !important;
+}
+#globalMessage {
+margin-right -5px!important;
+  margin-top 5px !important;
+  background-color #fff !important;
+  z-index 0 !important;
+  margin-bottom3px!important;
+  padding 5px 0 8px 65px !important;
+}
+
+#globalMessage h3 {
+  font-size 10pt !important;
+  color #5F5F5F !important;
+  font-weight normal !important;
+  margin 2px !important;
+}
+
+#globalMessage strong, h2 {
+  margin 2px !important;
+  font-size 10pt !important;
+  color #5F5F5F !important;
+  font-weight normal !important;
+}
+
+
+    Main Colours
+
+
+#watcherbefore,
+#board-listafter {
+  color rgb(72,84,98) !important;
+}
+
+body {
+  background rgb(252,252,252) !important;
+  color #454545 !important;
+}
+
+#header-bar {
+  background #fff !important;
+}
+
+.cataloglink abefore,
+.navLinks.navLinksBot a[href=catalog]after,
+.cataloglink aafter,
+.navLinks.navLinksBot a[href=catalog]before,
+.settings-linkafter,
+#header-bar .menu-button ibefore {
+  text-shadow 0px 0px 0px rgba(1,1,1,0)!important;
+  colorrgba(120,154,194,1) !important;
+}
+
+#watcher a,
+#header-bar a {
+  text-shadow 0 0px 0px rgba(1,1,1,.5)!important;
+  font-weight 400 !important;
+  font-size 9pt !important;
+}
+
+#dump-buttonhover,
+.globalMessage ahover,
+.hand,
+.posteruid,
+.postertrip,
+.abbr ahover,
+.pages ahover,
+.pages strong a,
+#qrhoverbefore,
+.quotelinkhover,
+.backlinkhover,
+.inline .backlinkhover,
+.postMessage .linkifyhover,
+.embedderhover,
+.fileTexthover a,
+.fileTexthover,
+.fileInfo ahover,
+.summaryhover {
+  color #6f7b96 !important;
+}
+
+#watcher a,
+#board-list a {
+opacity.7!important;
+  color rgba(236,236,236,1) !important;
+
+}
+
+.handhover,
+.posteruidhover,
+.posteruidhover .hand{
+  color #434347 !important;
+}
+
+.name {
+  font-weight 500 !important;
+  color #525963 !important;
+}
+
+.useremail {
+  color #5e75a5 !important;
+  text-decoration none !important;
+}
+
+a.useremail[href='sage'] .name,
+a.useremail[href='Sage'] .name,
+a.useremail[href='SAGE'] .name,
+a.useremail[href='sage'] .postertrip,
+a.useremail[href='Sage'] .postertrip,
+a.useremail[href='SAGE'] .postertrip {
+  color #5e75a5 !important;
+  font-weight normal !important;
+} 
+
+a.useremail[href='sage'] .namehover,
+a.useremail[href='Sage'] .namehover,
+a.useremail[href='SAGE'] .namehover,
+a.useremail[href='sage'] .postertriphover,
+a.useremail[href='Sage'] .postertriphover,
+a.useremail[href='SAGE'] .postertriphover {
+  color #4b618f !important;
+  transition all 0.3s linear 0s;
+}
+
+.nameBlock ahoverafter {
+  content ( attr(href) );
+  margin-left 3px;
+  color #a6a6a6 !important;
+  transition all 0.3s linear 0s;
+}
+
+.pages a,
+.dateTime {
+  color #a6a6a6 !important;
+}
+
+.postNum a {
+  color #c0bdbd !important;
+}
+
+.backlink,
+.inline .backlink,
+a.quotelink {
+  color #999 !important;
+}
+
+.quotelink.inlined,
+.backlink.inlined,
+.inlined {
+  color #5f5f65 !important;
+  font-style italic !important;
+  opacity 1 !important;
+}
+
+.warning,
+.deadlink,
+.deadlink.quotelink,
+.postMessage strong {
+  color #c5c5c5 !important;
+  font-weight normal !important;
+}
+
+.backlink {
+  font-size 0 !important;
+}
+    
+.backlinkafter {
+opacity 1 !important;
+font-family FontAwesome !important;
+color rgba(120,154,194,1) !important;
+  content ? !important;
+  font-size 7pt !important;
+  margin-right 4px !important;
+}
+
+.backlinkhoverafter,
+.backlink.inlinedafter {
+opacity 1 !important;
+font-family FontAwesome !important;
+  content ? !important;
+}
+
+.highlight-ownroot .yourPost  .post.reply {
+margin-left-4px!important;
+border-top1px solid rgba(233,236,240,1)!important;
+background linear-gradient(to left,  rgba(30,87,153,.3) 6px,rgba(255,255,255,1) 6px)!important;
+margin-bottom -3px!important;
+width100%!important;
+margin-top -5px!important;
+border-left 0px!important;
+}
+
+.highlight-youroot .quotesYou  .post.reply {
+margin-left-4px!important;
+border-top1px solid rgba(233,236,240,1)!important;
+background linear-gradient(to left,  rgba(30,87,153,.6) 6px,rgba(255,255,255,1) 6px)!important;
+margin-bottom -3px!important;
+width100%!important;
+margin-top -5px!important;
+border-left 0px!important;
+}
+
+.exblock.reply,
+.reply.post.highlight,
+.reply.posttarget,
+.post.reply.qphl,
+.post.op.qphl {
+  box-shadow inset 0 2px 0 2555px rgba(1, 1, 1,0.01)!important;
+  outline none !important;
+}
+
+.fileText,
+.fileInfo a {
+  color #687f43 !important;
+  text-decoration none !important;
+  font-style italic !important;
+}
+
+.quote {
+  color #4b7e4a !important;
+}
+
+.subject {
+  color #7a7f88 !important;
+  font-weight600!important;
+}
+
+.quote a,
+.prettyprint a,
+.prettyprint ahover {
+  color inherit !important;
+  font-family inherit !important;
+  cursor text !important;
+}
+
+.prettyprint span {
+  font-family Monaco, monospace !important;
+}
+
+.prettyprint {
+  font-size 9pt !important;
+  background-color rgba(255,255,255,.7) !important;
+  border solid 1px rgba(95,95,95,.2) !important;
+  max-width 700px!important;
+}
+
+.abbr a,
+.embedder,
+.linkify,
+.globalMessage a,
+.fileThumb  imgfirst-child {
+  color #999!important;
+}
+
+#fourchanx-settings.dialog a {
+  color #49637d !important;
+}
+
+#fourchanx-settings.dialog ahover {
+  color #2f4052 !important;
+}
+
+
+    Page Links
+
+
+.pagelist {
+  float none !important;
+  width 100% !important;
+  height20px!important;
+  margin 0 auto 0 auto!important;
+  padding0!important;
+  font-size 9pt !important;
+  color transparent !important;
+  background transparent !important;
+  border none !important;
+  white-space nowrap !important;
+}
+
+.pages {
+  text-align center !important;
+  float none !important;
+}
+.warning {
+displaynone!important;
+}
+.deleted-post .post {
+  opacity .5;
+}
+
+
+.postNum  afirst-child {
+  font-size 0;
+  color transparent;
+}
+
+.postNum  afirst-childbefore  {
+  content '';
+  font-size 1rem;
+}
+
+a.currentnth-child(7) {
+  position fixed !important;
+  top 8px !important;
+  left 10px !important;
+  color rgb(125,125,125) !important;
+  z-index 0 !important;
+  } 
+  
+.next,
+.prev,
+.pages.cataloglink,
+.pagelist .prev input,
+.pagelist .next input {
+  position relative !important;
+  -moz-appearance none !important;
+  width 0 !important;
+  background none !important;
+  color transparent !important;
+  border none !important;
+  box-shadow none !important;
+}
+
+
+    Settings screen
+
+
+#options.reply.dialog {
+  background #fff !important;
+  color #717171 !important;
+  border none !important;
+  z-index 5 !important;
+}
+
+#options.reply.dialog label {
+  text-decoration none !important;
+  font-style italic !important;
+  color #494949 !important;
+}
+
+#optionsbar {
+  border-bottom 1px solid #eceef0 !important;
+  margin -5px !important;
+  padding 5px !important;
+}
+
+#fourchanx-settings.dialog {
+  background #fff !important;
+}
+
+.dialog {
+  background none !important;
+  color #2e3033 !important;
+  border transparent !important;
+}
+
+.dialog a,
+.dialog label {
+  text-decorationnone!important;
+}
+
+#optionsContent  inputchecked + div,
+#updaterhover  div,
+#updater .move,
+#qr.dump #replies,
+.hasSubMenu.focused  .subMenu {
+  display block;
+}
+
+
+    Quick reply
+
+
+#qr {
+  border-radius 5px 0 0px 5px !important;
+}
+
+#qr.dialog {
+  padding 5px 0 5px 5px !important;
+  position fixed !important;
+  display inline !important;
+  visibility hidden !important;
+  top 0 !important;
+  right -125px !important;
+  left auto !important;
+  width 300px !important;
+    backgroundrgba(120,154,194,1) !important;
+  box-shadow none !important;
+  z-index 2 !important;
+  transition all 0.35s linear;
+}
+
+#qr.dialog.has-captchanot([Hidden]),
+#qr.dialognot([Hidden]) {
+  visibility visible !important;
+  top34px!important;
+  right0px !important;
+}
+
+#qr.dialog.has-captcha {
+  top34px!important;
+  right-350px !important;
+  transition all 0.9s linear;
+}
+
+#qr .move {
+  position fixed !important;
+  float right !important;
+  left 151px !important;
+  bottom -2px !important;
+  margin-top 0px !important;
+  font-size 0px !important;
+  color transparent !important;
+  background-color transparent !important;
+  height 25px !important;
+  max-width 15px !important;
+  min-width 15px !important;
+  cursor default !important;
+}
+
+#qr  div {
+  max-width 400px !important;
+  width 400px !important;
+}
+
+#qr select {
+  display none !important;
+}
+
+textarea.field {
+  height 17em !important;
+  margin-bottom -1px !important;
+  border-left 1px solid #dedede !important;
+  border-right 1px solid #dedede !important;
+}
+
+.field {
+  border none !important;
+}
+
+.fieldhover,
+.fieldfocus {
+  box-shadow inset 0 0 0 1px rgba(0, 0, 0, .12) !important;
+}
+
+input-moz-placeholder,
+textarea-moz-placeholder {
+  color rgb(153, 153, 153) !important;
+}
+
+#qr-filename-container {
+  border-bottom-left-radius4px!important;
+  margin-bottom 3px !important;
+  border-left 1px solid #dedede !important;
+  overflow hidden !important;
+  max-height 19px !important;
+  min-width 74.3% !important;
+  max-width 74.3% !important;
+}
+
+#qr.has-spoiler .has-file #qr-filename-container {
+  min-width 68.3% !important;
+  max-width 68.3% !important;
+}
+
+#qr-spoiler-label {
+  box-shadow 0px 1px 1px rgba(0, 0, 0, .095) inset;
+  border-top 1px solid #ddd !important;
+  border-bottom 1px solid #ddd !important;
+  max-height 19px !important;
+  min-height 19px !important;
+  margin-left -1px !important;
+  background white !important;
+}
+
+#qr-spoiler-label input {
+  top 1px !important;
+}
+
+#qr-filename {
+  min-width 92% !important;
+  max-width 92% !important;
+  overflow hidden !important;
+}
+
+#file-n-submit {
+  height 20px !important;
+  background #FFF!important;
+  border-bottom 1px solid #dedede !important;
+  border-bottom-right-radius 0px !important;
+  border-bottom-left-radius 5px !important;
+}
+
+#file-n-submit input {
+  width 25.5% !important;
+}
+
+#file-n-submit.has-file input {
+  margin-left -2px !important;
+  width 25.9% !important;
+}
+
+#qr-filerm {
+  color #999 !important;
+  bottom 2px !important;
+  right 10px !important;
+}
+
+#qr [type=file] [type=text]focus {
+  border 1px solid grey !important; 
+}
+
+textarea,
+.field,
+#qr [type=file] [type=text] {
+  -moz-appearance none !important;
+  background-color #fff !important;
+  font-size 12px !important;
+  vertical-align middle !important;
+}
+
+select,
+textareanot(focus),
+.fieldnot(focus) {
+  box-shadow 0px 0px 1px 0 rgba(0, 0, 0, .095) inset;
+  background #fff !important;
+}
+
+#qr [type=file] [type=text]not(focus) {
+  background #fff !important;
+}
+
+#qr [type=file] [type=text] {
+  float right !important;
+}
+
+#dump-buttonhover,
+input[type=submit]hover,
+input[type=submit]active,
+input[type=submit].active,
+input[type=submit].disabled,
+input[type=submit][disabled] {
+  background-color #fafafa !important;
+}
+
+input[type=submit] {
+  margin-top 1px !important;
+  background #fff !important;
+  text-align center !important;
+  margin-left -1px !important;
+  padding-bottom1px!important;
+  width 25.2% !important;
+  cursor pointer !important;
+  background-repeat repeat-x !important;
+  border none !important;
+  border-top 1px solid #ddd !important;
+  -moz-border-top-colors none !important;
+  -moz-border-right-colors none !important;
+  -moz-border-bottom-colors none !important;
+  -moz-border-left-colors none !important;
+  border-image none !important;
+  -moz-appearance none !important;
+  box-shadow 0px 0px 1px 0 rgba(0, 0, 0, .095) inset;
+}
+
+input[type=submit] {
+  border-topnone!important;
+  border-right 1px solid #dedede !important;
+  border-bottom-right-radius4px!important;
+}
+
+input[name=name],
+input[name=email],
+input[name=sub] {
+  border-top 1px solid #dedede !important;
+  max-height 23px !important;
+  min-height 23px !important;
+}
+
+input[name=sub] {
+  border-right 1px solid #dedede !important;
+}
+
+.persona {
+  max-height 7px !important;
+  min-height 7px !important;
+}
+
+.personahover {
+  max-height 20px !important;
+  min-height 20px !important;
+}
+
+.personaactive {
+  max-height 20px !important;
+  min-height 20px !important;
+}
+
+.captcha-img {
+  margin-top0!important;
+  margin-bottom-1px!important;
+  min-width300px!important;
+  max-width300px!important;
+  box-shadow 0px 1px 1px rgba(0, 0, 0, .095) inset;
+  bordernone!important;
+  border-left 1px solid #dedede !important;
+  border-right 1px solid #dedede !important;
+}
+
+.captcha-img  img {
+  margin-left0px!important;
+  margin-top5px!important;
+  visibilityvisible!important;
+  min-width298px!important;
+  max-width298px!important;
+  border-bottom transparent !important;
+}
+
+.captcha-input.field {
+  border-left 1px solid #dedede !important;
+  border-right 1px solid #dedede !important;
+  box-shadow 0px 1px 1px rgba(0, 0, 0, .095) inset;
+  margin-top-1px!important;
+  margin-bottom-1px!important;
+}
+
+#replies  div {
+  border-top 1px solid rgba(0, 0, 0, .094) !important;
+  border-left 1px solid #dedede !important;
+  border-right 1px solid #dedede !important;
+}
+
+#replies  div .thumbnail {
+  background-color rgba(160,160,160,.5) !important;
+}
+
+#dump-list-container {
+  margin-bottom -1px !important;
+  background #fff !important;
+  border-left 1px solid #dedede !important;
+  border-right 1px solid #dedede !important;
+  box-shadow none !important;
+}
+
+#add-post {
+  color #999 !important;
+}
+
+.qr-preview {
+  margin-bottom 1px !important;
+}
+
+
+    Menu Button
+
+
+.menu-button i {
+  color transparent !important;
+}
+ 
+.menu-button {
+  float right !important;
+  margin-top -8px !important;
+  margin-right 10px !important;
+  margin-left 0px !important;
+  font-size 0 !important;
+}
+ 
+.menu-buttonafter {
+color rgb(255,255,255) !important;
+font-style normal !important;
+font-family FontAwesome !important;
+  content  !important;
+  font-size 9pt !important;
+}
+ 
+.menu-buttonhoverafter {
+  color rgb(216,212,212) !important;
+}
+ 
+.post.op .menu-buttonafter {
+color rgb(242,242,242) !important;
+}
+ 
+.post.op .menu-buttonhoverafter {
+color rgb(230,230,230) !important;
+}
+ 
+.post.op .menu-button {
+  position absolute !important;
+  top 5px !important;
+  right -2px !important;
+  margin-left 0 !important;
+}
+ 
+#menu.reply.dialog {
+  display block !important;
+  margin-left 0 !important;
+  margin-top -1px !important;
+  border 1px solid #ccc !important;
+}
+ 
+.subMenu {
+  left -105px !important;
+  width 100px !important;
+}
+
+.entry,
+.entry a,
+.subMenu {
+  background #ffffff !important;
+  color #999 !important;
+  font-size 8pt !important;
+  bordernone!important;
+}
+
+.entryhover,
+.entry ahover {
+  color #49637d !important;
+}
+
+
+
+    Hide threads  posts
+
+
+.stub span,
+.sideArrows,
+.hide-reply-button.stub span {
+  color transparent !important;
+  font-size 0 !important;
+}
+
+.postContainer .stubfirst-of-type,
+.postContainer .stub {
+  margin-top0px!important;
+}
+
+.stub {
+  padding 0 0 0 0 !important;
+  margin-top24px!important;
+  width 100% !important;
+  background #e5e5e5 !important;
+  border-radius 5px !important;
+  min-height 20px !important;
+  max-height 20px !important;
+}
+
+.stubfirst-of-type {
+  margin-top 25px !important;
+}
+
+.hide-reply-button {
+
+  position relative !important;
+  float right !important;
+  margin-top 2px !important;
+  margin-right 12px !important;
+  z-index 1;
+  font-size 0 !important;
+}
+
+.hide-thread-button {
+  position absolute !important;
+  float right !important;
+  top 4px !important;
+  margin-right 8px !important;
+  right 0 !important;
+  z-index 1;
+  font-size 0 !important;
+}
+
+.hide-thread-button spanafter,
+.hide-reply-button spanafter {
+display none!important;
+  content - !important;
+  font-size 13px !important;
+color transparent !important;
+  z-index 5 !important;
+}
+.hide-reply-button hoverafter,
+.hide-thread-button hoverafter {
+  color #666 !important;
+}
+
+.stub .menu-button,
+.hide-reply-button.stub .menu-button {
+  font-size 0px !important;
+  color transparent !important;
+  font-family 'Univers LT Std 55' !important;
+  margin-top 3px !important;
+  margin-right 3px !important;
+}
+
+.stub spannot(.dropmarker)before {
+  float right !important;
+  margin-top 0px !important;
+  margin-right 7px !important;
+  content + !important;
+  font-size 13px !important;
+  color #999 !important;
+  font-family 'Univers LT Std 55' !important;
+}
+ 
+.stub a {
+  margin-left 0px !important;
+  color #999 !important;
+  font-family 'Univers LT Std 55' !important;
+  font-size 8pt !important;
+  padding-left 2px !important;
+}
+
+.stub  ahover {
+  color #666 !important;
+}
+
+
+    Updater
+
+
+#thread-stats {
+
+  position fixed !important;
+  left 5px !important;
+  right auto !important;
+  bottom 4px !important;
+  top auto !important;
+  border none !important;
+  z-index 4 !important;
+  font-size 13px !important;
+  color rgba(255,255,255,0.15) !important;
+  background none !important;
+}
+
+#update-timer {
+  position fixed !important;
+  left 5px !important;
+  right auto !important;
+  bottom 18px !important;
+  top auto !important;
+  border none !important;
+  z-index 4 !important;
+  font-size 13px !important;
+  color rgba(255,255,255,0.15) !important;
+  background none !important;
+}
+
+#update-status.new {
+  position fixed !important;
+  left 17px !important;
+  right auto !important;
+  bottom 18px !important;
+  top auto !important;
+  border none !important;
+  z-index 4 !important;
+  font-size 13px !important;
+  background none !important;
+}
+
+}
+
+@-moz-document regexp(httpsboards.4chan.org(..........)catalog) {
+
+#globalToggle,
+#first-run,
+#globalMessage,
+#toggleMsgBtn,
+#filters-ctrl,
+#qf-clear.button,
+#styleSwitcher {
+  display none !important;
+}
+
+body {
+  color #5F5F5F !important;
+  padding-left14% !important;
+  padding-right2%!important;
+}
+
+#content {
+  position inherit !important;
+}
+
+.btn-wrap {
+  font-size 0 !important;
+}
+
+#settings  {
+  width 100% !important;
+}
+
+#settings,
+#threads,
+#info .navLinks,
+#content .navLinks {
+  text-align center !important;
+}
+
+#ctrl,
+#qf-ctrl.button {
+  font-size 13px !important;
+  color #5f5f5f !important;
+  text-decoration none !important;
+  margin-top 25px !important;
+}
+
+#qf-box {
+  outline none !important;
+}
+
+inputfocus, 
+textareafocus {
+  border none !important;
+}
+
+#settingsWindowLink {
+  font-size 0 !important;
+}
+
+#theme {
+  background #fff !important;
+}
+}
