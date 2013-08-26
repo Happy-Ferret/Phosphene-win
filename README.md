@@ -1,7 +1,5 @@
 Phosphene_win
 =============
-I'm on vacation for 2 weeks, so there won't be any updates... I'm not abandoning this project though!
-
 A windows port of hdni's amazing Gnome theme: https://github.com/hdni/Phosphene
 
 Still WIP, at the moment I there is not much besides a TrueTransparency theme and an almost finished foobar theme.
@@ -36,4 +34,9 @@ Scripts
 ----------------
 Use win+1/2 to resize windows, made for 1920x1200 monitors.
 Hold Left mouse button+1/2/3/4 to move windows to workspace 1/2/3/4
+
+bbLean
+----------------
+Copy & replace all the files to your bblean folder, load the theme and reconfigure.
+
 
