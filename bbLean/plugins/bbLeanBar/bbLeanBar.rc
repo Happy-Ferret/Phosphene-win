@@ -1,0 +1,89 @@
+# ------------------------------------------------------
+# bbLeanbar 1.17 - configuration
+
+# Lines starting with # or ! are ignored
+
+# ---------------------
+# The items on the bar:
+# This builds a toolbar with tasks and tray. You can
+# change the order of items or uncomment some of the
+# currently disabled (!) items)
+
+# bbleanbar.item: WorkspaceLabel
+
+bbleanbar.item: space
+bbleanbar.item: space
+bbleanbar.item: WindowLabel
+bbleanbar.item: Clock
+bbleanbar.item: Tray
+# ----------------
+# General Settings (ctrl-right-click menu)
+bbLeanBar.placement: TopLeft
+bbLeanBar.position.x: -255
+bbLeanBar.position.y: 0
+bbLeanBar.widthPercent: 53
+bbLeanBar.useSlit: false
+bbLeanBar.AutoHide: false
+bbleanbar.OnTop: true
+bbleanbar.autoRaise: true
+bbleanbar.snapToEdge: true
+bbLeanBar.snapWindow: false
+bbLeanBar.pluginToggle: false
+
+bbLeanBar.alpha.enabled: false
+bbLeanBar.alpha.value: 115
+
+# ---------
+# Task Tabs
+bbLeanBar.tasks.style: 0
+bbLeanBar.tasks.maxWidth: 16
+bbLeanBar.tasks.reverse: false
+bbLeanBar.tasks.current: true
+bbLeanBar.tasks.sysmenu: false
+bbLeanBar.tasks.drawBorder: false
+
+------------
+# Icons
+bbLeanBar.smallIcons: true
+bbLeanBar.icon.saturation: 0
+bbLeanBar.icon.hue: 0
+
+# ------------
+# Clock-Format
+bbLeanBar.strftimeFormat: %I:%M %p
+
+# ---------------
+# Special Options
+bbLeanBar.autoFullscreenHide: true
+bbLeanBar.setDesktopMargin: true
+bbLeanBar.sendToSwitchTo: false
+bbLeanBar.sendToGesture: true
+
+# -------------------------
+# hidden icons (auto saved)
+bbLeanBar.tray.hidden.count: 16
+bbLeanBar.tray.hidden.1: "NotificationIconWindowClass",0
+bbLeanBar.tray.hidden.2: "ATL:000007FB2030F300",100
+bbLeanBar.tray.hidden.3: "ATL:000007FB1CC05460",49465
+bbLeanBar.tray.hidden.4: "RainmeterTrayClass",101
+bbLeanBar.tray.hidden.5: "VirtuaWinMainClass",1
+bbLeanBar.tray.hidden.6: "QWidget",0
+bbLeanBar.tray.hidden.7: "TrueTransparency",4242
+bbLeanBar.tray.hidden.8: "AutoHotkey",1028
+bbLeanBar.tray.hidden.9: "AutoHotkey",1028
+bbLeanBar.tray.hidden.10: "AutoHotkey",1028
+bbLeanBar.tray.hidden.11: "TrueTransparency64",4242
+bbLeanBar.tray.hidden.12: "WorkerW",123
+bbLeanBar.tray.hidden.13: "{E7076D1C-A7BF-4f39-B771-BCBE88F2A2A8}",1
+bbLeanBar.tray.hidden.14: "SystemTray_Main",1226
+bbLeanBar.tray.hidden.15: "µTorrent4823DF041B09",0
+bbLeanBar.tray.hidden.16: "AutoHotkey",1028
+Tokyo Active NEETs
+Perfect Cherry Blossom ~???????~",1
+Uploading 1 file...
+Can't sync "Untitled-2-Recovered.psd": out of space in your Dropbox",0
+Uploading 1 file...
+Can't sync "jdhasjdg.psd": out of space in your Dropbox",101
+Uploading 1 file...
+Can't sync "jdhasjdg.psd": out of space in your Dropbox",197380
+bbLeanBar.alwaysOnTop: true

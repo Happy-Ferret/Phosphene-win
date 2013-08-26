@@ -1,0 +1,27 @@
+# -----------------------------------------------------------------
+# bblean 1.17 - MENU FILE
+# -----------------------------------------------------------------
+
+# Available menu commands are listed in the documentation.
+
+[begin]
+	[exec] (Files) {C:\Users\Camille\Documents\AMANA3\Computer.lnk}
+	[nop]
+	[submenu] (Scripts)
+		[exec] (Starty) {C:\Users\Camille\Documents\AMANA3\Scripts\Starty_1200.bat}
+		[exec] (Wacomy) {C:\Users\Camille\Documents\AMANA3\Scripts\Wacomy.bat}
+		[end]
+	[submenu] (bbLean)
+		[exec] (bbStyleMaker) {bbstylemaker.exe}
+		[reconfig] (Reconfigure)
+		[Exit] (Exit)
+		[end]
+	[nop]
+	[submenu] (Oyasumi)
+		[Lock] (Lock)
+		[Logoff] (Logoff)
+		[Hibernate] (Standby)
+		[Reboot] (Reboot)
+		[Shutdown] (Shutdown)
+		[end]
+[end]
