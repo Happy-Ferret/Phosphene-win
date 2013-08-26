@@ -30,5 +30,10 @@ Install the required components and load the theme with columns UI.
 
 Rainmeter
 ----------------
-
 Load both skins, make BAR click through and make BUTTONS on top and not draggable.
+
+Scripts
+----------------
+Use win+1/2 to resize windows, made for 1920x1200 monitors.
+Hold Left mouse button+1/2/3/4 to move windows to workspace 1/2/3/4
+
