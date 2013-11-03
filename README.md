@@ -39,4 +39,9 @@ bbLean
 ----------------
 Copy & replace all the files to your bblean folder, load the theme and reconfigure.
 
+Firefox
+----------------
+Addons: adblock edge, close button button, gnotifier, greasemonkey (4chan x), hide find bar, hide menu bar, hide tabbar, https-everywhere, search image by google, stylish.
+
+
 
