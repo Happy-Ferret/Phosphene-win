@@ -2,7 +2,8 @@ Phosphene_win
 =============
 A windows port of hdni's amazing Gnome theme: https://github.com/hdni/Phosphene
 
-Still WIP, at the moment I there is not much besides a TrueTransparency theme and an almost finished foobar theme.
+~~Still WIP, at the moment I there is not much besides a TrueTransparency theme and an almost finished foobar theme.~~
+I switched to Linux, I'll keep updating the firefox skinn though, I'm also busy making a Phosphene GTK2 theme!
 
 TrueTransparency
 ----------------
@@ -41,7 +42,7 @@ Copy & replace all the files to your bblean folder, load the theme and reconfigu
 
 Firefox
 ----------------
-Addons: adblock edge, close button button, gnotifier, greasemonkey (4chan x), hide find bar, hide menu bar, hide tabbar, https-everywhere, search image by google, stylish.
+Addons: close button, classic theme restorer.
 
 
 
