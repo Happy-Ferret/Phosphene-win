@@ -5,6 +5,11 @@
 #page-proxy-favicon,
 .tab-icon-image,
 #go-button,
+#identity-icon-labels,
+#notification-popup-box[hidden="true"],
+#notification-popup-box[hidden="false"],
+#notification-popup-box,
+.notification-anchor-icon,
 #PanelUI-button {
     display: none !important;
 }
@@ -14,6 +19,7 @@
 
 
 #nav-bar {
+    -moz-appearance: none !important;
     background: #e8eaed !important;
     height: 58px !important;
     border-radius: 2px !important;
@@ -27,10 +33,12 @@
 
 #urlbar-container {
     margin-left: 250px !important;
+    -moz-appearance: none !important;
 }
 
 #urlbar {
     -moz-appearance: none !important;
+    box-shadow: none !important;
     font-size: 10pt !important;
     color: #3c4c5c !important;
     border: none !important;
@@ -44,6 +52,7 @@
 }
 
 #identity-box {
+    -moz-appearance: none !important;
     background: #fff !important;
     border: none !important;
     margin: 0px !important;
@@ -53,11 +62,8 @@
     box-shadow: none !important;
 }
 
-#identity-icon-labels {
-    display: none !important;
-}
-
 .chromeclass-toolbar-additional {
+    -moz-appearance: none !important;
     padding-right: 8px !important;
 }
 
@@ -68,6 +74,12 @@
 #tabbrowser-tabs {
     min-height: 36px !important;
     margin-top: 2px !important;
+    margin-left: -15px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+    min-width: 183px !important;
+    max-width: 183px !important;
 }
 
 .tabbrowser-tab {
@@ -336,7 +348,6 @@ scrollbar > slider {
     -moz-appearance: none !important;
 }
 
-/* Change icons' opacity so it fits with the rest of the theme */ 
 #appmenu-toolbar-button .toolbarbutton-icon, 
 #tabview-button .toolbarbutton-icon,
 #bookmarks-menu-button .toolbarbutton-icon,
@@ -354,4 +365,24 @@ scrollbar > slider {
 #alltabs-button:hover .toolbarbutton-icon {
     opacity: 0.9 !important;
     transition: all 0.2s ease 0s;
+}
+
+#ctr_back-forward-button {
+    margin-left: 14px !important;
+}
+
+#ctr_forward-button {
+    margin-left: 1px !important;
+}
+
+#cb-button {
+    margin-right: 21px !important;
+    margin-left: 21px !important;
+}
+
+
+#urlbar-display-box {
+    -moz-appearance: none !important;
+
+    box-shadow: none !important;
 }
