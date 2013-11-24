@@ -3,7 +3,7 @@ Phosphene_win
 A windows port of hdni's amazing Gnome theme: https://github.com/hdni/Phosphene
 
 ~~Still WIP, at the moment I there is not much besides a TrueTransparency theme and an almost finished foobar theme.~~
-I switched to Linux, I'll keep updating the firefox skinn though, I'm also busy making a Phosphene GTK2 theme!
+I switched to Linux, I'll keep updating the firefox css though, I'm also busy making a Phosphene GTK2 theme!
 
 TrueTransparency
 ----------------
