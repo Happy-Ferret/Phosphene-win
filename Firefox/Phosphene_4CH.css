@@ -1288,7 +1288,8 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 #header-bar #thread-stats,
 #header-bar .menu-buttons,
 .fileInfo, .menu-button.brackets-wrap,
-.watch-thread-link, .summary {
+.watch-thread-link, .summary,
+.fileText {
     display: none !important;
 }
 
@@ -1299,32 +1300,43 @@ a.useremail[href*='SAGE'] .postertrip:hover {
     text-align: right !important;
 }
 
-.nameBlock, .dateTime, .postNum.desktop, .subject {
+.nameBlock, .dateTime, .postNum.desktop, .subject, .warning {
     opacity: 0 !important;
-    transition: all 0.2s ease !important;
+    transition: all 0.15s ease !important;
 }
 
-.post:hover .nameBlock {
+.postContainer:hover .nameBlock {
+    transition-delay: 0.15s !important;
     opacity: 1 !important;
 }
 
-.post:hover .subject {
+.postContainer:hover .subject {
+    transition-delay: 0.15s !important;
     opacity: 1 !important;
 }
 
-.post:hover .dateTime {
+.postContainer:hover .warning {
+    transition-delay: 0.15s !important;
     opacity: 1 !important;
 }
 
-.post:hover .postNum.desktop {
+.postContainer:hover .dateTime {
+    transition-delay: 0.15s !important;
     opacity: 1 !important;
 }
 
-.post:hover .backlink {
+.postContainer:hover .postNum.desktop {
+    transition-delay: 0.15s !important;
+    opacity: 1 !important;
+}
+
+.postContainer:hover .backlink {
+    transition-delay: 0.15s !important;
     opacity: 1 !important;
 }
 
 .backlink {
+     transition-delay: 0.05s !important;
     opacity: 0 !important;
     position: relative !important;
 }
@@ -1373,6 +1385,21 @@ a.useremail[href*='SAGE'] .postertrip:hover {
     font-size: 14px; 
     content: "@Kamiru" !important;
     color: #AD7261 !important;
+}
+
+.thread {
+    border-top: 1px solid #edf1f2 !important;
+}
+
+.inline {
+    margin: 0px !important;
+    margin-top: 32px !important;
+    margin-bottom: 8px !important;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    border-left: none !important;
+    border-top: 1px solid #edf1f2 !important;
+    border-bottom: 1px solid #edf1f2 !important;
 }
 
 
