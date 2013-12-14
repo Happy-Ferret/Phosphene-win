@@ -408,9 +408,11 @@ display: none !important;
     margin-left: 21px !important;
 }
 
-
 #urlbar-display-box {
     -moz-appearance: none !important;
-
     box-shadow: none !important;
+}
+
+.close-icon {
+    -moz-binding: url('chrome://browser/content/tabbrowser.xml#tabbrowser-close')!important;
 }
