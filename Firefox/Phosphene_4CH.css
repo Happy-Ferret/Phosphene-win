@@ -495,7 +495,7 @@ html.fixed {
     background: #5f9cce !important;
     border: none !important;
     border-radius: 2px !important;
-    padding: 4px 8px 4px 8px !important;
+padding: 5px 7px 4px 7px !important;
     cursor: pointer;
 }
 
@@ -1289,14 +1289,14 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 #header-bar .menu-buttons,
 .fileInfo, .menu-button.brackets-wrap,
 .watch-thread-link, .summary,
-.fileText {
+.fileText, .abbr {
     display: none !important;
 }
 
 .postInfo {
     position: absolute !important;
-    top: 15px !important;
-    right: -66px !important;
+    top: 6px !important;
+    right: -70px !important;
     text-align: right !important;
 }
 
@@ -1402,6 +1402,27 @@ a.useremail[href*='SAGE'] .postertrip:hover {
     border-bottom: 1px solid #edf1f2 !important;
 }
 
+.pages {
+    margin-top: 2px !important;
+}
+
+.prev {
+    margin-top: 3px !important;
+}
+
+.pages.cataloglink a {
+    padding: 6px 8px 5px 8px !important;
+}
+
+.pages.cataloglink {
+    margin-top: 7px !important;
+}
+
+#qr {
+background: #fff !important;
+border: 1px solid #f2f3f3 !important;
+padding: 4px !important;
+}
 
 }
 
