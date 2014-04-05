@@ -1,11 +1,16 @@
-/* TODO */
+/* YOU NEED "Firefox Aurora" OR "Firefox Nightly" FOR THIS CSS TO WORK */
+/* YOU NEED THE FOLLOW FONTS FOR THIS CSS TO WORK: "Univers LT 55" AND "FontAwesome" */
 
-/* Datetime, blockname margin NON thread OP */
+/* TODO */
+/* Datetime, blockname margin tweak bit */
 /* Fix underline reply icons hover */
+/* Fix catalog */
+/* Fix gallery */
+/* Fix buttons */
 
 @-moz-document domain("boards.4chan.org") {
 
-.navLinks, .fileText, hr, #header-bar, .page-num, .pages, .stickyIcon, .closedIcon, .summary, #updater, .identityIcon, .pagelist, .postNum [title="Highlight this post"], .gal-name, .gal-count, .gal-buttons, .inline .nameBlock, .inline .dateTime, .inline .subject, .hasInline .dateTime, .hasInline .nameBlock {
+.navLinks, .fileText, hr, #header-bar, .page-num, .pages, .stickyIcon, .closedIcon, .summary, #updater, .identityIcon, .pagelist, .postNum [title="Highlight this post"], .gal-name, .gal-count, .gal-buttons, .inline .nameBlock, .inline .dateTime, .inline .subject, .hasInline .dateTime, .hasInline .nameBlock, .index-refresh-shortcut, #returnIcon, #img-controls {
 display: none !important;
 }
 
@@ -79,7 +84,41 @@ content: "test" !important;
 }
 
 #shortcuts {
-opacity: 0 !important;
+opacity: 1 !important;
+left: 0px !important;
+width: 57px !important;
+background: transparent !important;
+}
+
+.icon-orientation-horizontal #a-stats, .icon-orientation-horizontal #a-icons, .sidebar-location-left #shortcuts {
+flex-direction: row !important;
+background: transparent !important;
+}
+
+#main-menu, #catalogIcon, a#appchan-gal {
+font-size: 0px !important;
+color: #5f9cce !important;
+opacity: 0.25 !important;
+font-family: "FontAwesome" !important;
+}
+
+#main-menu:hover, #catalogIcon:hover, a#appchan-gal:hover {
+color: #326085 !important;
+}
+
+#main-menu:after {
+font-size: 14px !important;
+content: "\f013" !important;
+}
+
+#catalogIcon:after {
+font-size: 14px !important;
+content: "\f002" !important;
+}
+
+a#appchan-gal:after {
+font-size: 14px !important;
+content: "\f03e" !important;
 }
 
 /* POSTS */
@@ -222,7 +261,6 @@ opacity: 1 !important;
 }
 
 .backlink:hover{
-border-bottom: none!important;
 color: #326085 !important;
 }
 
@@ -231,8 +269,8 @@ color: #326085 !important;
 }
 
 .backlink:after{
-font-size: 18px !important;
-content: "" !important;
+font-size: 14px !important;
+content: "\f112" !important;
 }
 
 .post:hover .dateTime, .dateTime:hover, .post:hover .nameBlock, .nameBlock:hover, .backlink-container:hover, .post:hover .backlink-container  {
@@ -334,7 +372,7 @@ max-width: 59px !important;
 right: 67px !important;
 }
 
-.gal-prev:before {
+.gal-prev:after {
 content: "PREVIOUS" !important;
 }
 
@@ -344,13 +382,12 @@ max-width: 32px !important;
 right: 14px !important;
 }
 
-.gal-next:before {
+.gal-next:after {
 content: "NEXT" !important;
 }
 
 .gal-thumbnails {
 border: none !important;
-flex: 95% !important;
 }
 
 .gal-thumbnails img {
