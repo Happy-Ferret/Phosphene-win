@@ -1,6 +1,11 @@
+/* TODO */
+
+/* Datetime, blockname margin NON thread OP */
+/* Fix underline reply icons hover */
+
 @-moz-document domain("boards.4chan.org") {
 
-.navLinks, .fileText, hr, #header-bar, .page-num, .pages, .stickyIcon, .closedIcon, .summary, #updater, .identityIcon, .pagelist, .postNum [title="Highlight this post"], .gal-name, .gal-count, .gal-buttons {
+.navLinks, .fileText, hr, #header-bar, .page-num, .pages, .stickyIcon, .closedIcon, .summary, #updater, .identityIcon, .pagelist, .postNum [title="Highlight this post"], .gal-name, .gal-count, .gal-buttons, .inline .nameBlock, .inline .dateTime, .inline .subject, .hasInline .dateTime, .hasInline .nameBlock {
 display: none !important;
 }
 
@@ -148,16 +153,16 @@ margin-bottom: 11px !important;
 padding-right: 0% !important;
 }
 
-.inline .postNum {
-right: 49px !important;
+.inline .postNum, .inline .backlink-container {
+right: -11px !important;
 }
 
-.inline .inline .postNum {
-right: 124px !important;
+.inline .inline .postNum, .inline .inline .backlink-container {
+right: 64px !important;
 }
 
-.inline .inline .inline .postNum {
-right: 199px !important;
+.inline .inline .inline .postNum, .inline .inline .inline .backlink-container{
+right: 139px !important;
 }
 
 /* POST INFO */
@@ -179,6 +184,7 @@ font-size: 12px !important;
 top: -5px !important;
 color: #b1bfc4 !important;
 opacity: 0 !important;
+transition: all 0.2s ease 0s !important;
 }
 
 .nameBlock {
@@ -186,6 +192,7 @@ position: relative !important;
 font-size: 12px !important;
 top: -5px !important;
 opacity: 0 !important;
+transition: all 0.2s ease 0s !important;
 }
 
 .name, .postertrip {
@@ -197,18 +204,40 @@ color: #ce5f80 !important;
 position: relative !important;
 color: #5f7dce !important;
 top: -22px !important;
+transition: all 0.2s ease 0s !important;
 }
 
 .backlink-container {
 position: absolute !important;
-right:-70px !important;
-top: 25px !important;
-opacity: 1 !important;
-width: 100px !important;
+right: -85px !important;
+top: 18px !important;
+opacity: 0.25 !important;
+width: 80px !important;
+transition: all 0.2s ease 0s !important;
 }
 
-.post:hover .dateTime, .dateTime:hover, .post:hover .nameBlock, .nameBlock:hover, .backlink:hover, .post:hover .backlink  {
+.backlink {
+font-size: 0px !important;
 opacity: 1 !important;
+}
+
+.backlink:hover{
+border-bottom: none!important;
+color: #326085 !important;
+}
+
+.inlined:not(.quotelink) {
+color: #326085 !important;
+}
+
+.backlink:after{
+font-size: 18px !important;
+content: "" !important;
+}
+
+.post:hover .dateTime, .dateTime:hover, .post:hover .nameBlock, .nameBlock:hover, .backlink-container:hover, .post:hover .backlink-container  {
+opacity: 1 !important;
+background: transparent !important;
 transition: all 0.2s ease 0.2s !important;
 }
 
@@ -268,6 +297,10 @@ transition: all 0.3s ease 0s !important;
 
 .replylink:hover {
 background-color: #326085 !important;
+}
+
+.opContainer .dateTime {
+margin-right: 56px !important;
 }
 
 /* GALLERY */
